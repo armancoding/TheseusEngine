@@ -24,5 +24,30 @@ namespace TheseusEditor.Project
         {
             InitializeComponent();
         }
+
+        private void OnOpen_Button_Click(object sender, RoutedEventArgs e)
+        {
+            OpenSelectedProject();
+        }
+
+        private void ListBoxItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            OpenSelectedProject();
+        }
+
+        private void OpenSelectedProject()
+        {
+            var project = OpenProjectClass.Open(projectListBox.SelectedItem as ProjectData);
+            bool dialogResult = false;
+            var win = Window.GetWindow(this);
+            if (project != null)
+            {
+                dialogResult = true;
+                win.DataContext = project;
+            }
+            win.DialogResult = dialogResult;
+            win.Close();
+        }
+
     }
 }

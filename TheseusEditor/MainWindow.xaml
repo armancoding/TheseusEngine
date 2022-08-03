@@ -4,11 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TheseusEditor"
+        xmlns:editors="clr-namespace:TheseusEditor.Editors"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Background="#2E2828" Foreground="#D2C8C8" BorderBrush="#2E2828"
         Title="Theseus Editor" Height="450" Width="800">
     <Grid>
-
-        
+       
+        <editors:WindowEditorView />
     </Grid>
 </Window>

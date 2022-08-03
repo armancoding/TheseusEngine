@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\
+C:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\obj\Debug\
 TheseusEditor
 none
 false
 DEBUG;TRACE
-D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\App.xaml
-41382860359
+C:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\App.xaml
+52059064894
 
-112084354871
-13-1310406943
-MainWindow.xaml;Project\NewProject.xaml;Project\OpenProject.xaml;Project\ProjectBrowserDialog.xaml;
+16-2144699346
+17-761466390
+Editors\WorldEditor\WindowEditorView.xaml;MainWindow.xaml;Project\NewProject.xaml;Project\OpenProject.xaml;Project\ProjectBrowserDialog.xaml;
 
-False
+True
 

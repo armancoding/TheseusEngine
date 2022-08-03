@@ -25,5 +25,21 @@ namespace TheseusEditor.Project
             InitializeComponent();
 
         }
+
+        private void OnCreate_Button_Click(object sender, RoutedEventArgs e)
+        {
+            var vm = DataContext as NewProjectClass;
+            var projectPath = vm.CreateProject(templateListBox.SelectedItem as ProjectTemplate);
+            bool dialogResult = false;
+            var win = Window.GetWindow(this);
+            if(!string.IsNullOrEmpty(projectPath))
+            {
+                dialogResult = true;
+                var project = OpenProjectClass.Open(new ProjectData() { ProjectName = vm.ProjectName, ProjectPath = projectPath });
+                win.DataContext = project;
+            }
+            win.DialogResult = dialogResult;
+            win.Close();
+        }
     }
 }
