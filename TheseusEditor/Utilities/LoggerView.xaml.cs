@@ -23,12 +23,6 @@ namespace TheseusEditor.Utilities
         public LoggerView()
         {
             InitializeComponent();
-            Loaded += (s, e) =>
-            {
-                Logger.Log(MessageType.Info, "Info Message");
-                Logger.Log(MessageType.Warning, "Warming Message");
-                Logger.Log(MessageType.Error, "Error Message");
-            };
         }
 
         private void OnClear_Button_Click(object sender, RoutedEventArgs e)

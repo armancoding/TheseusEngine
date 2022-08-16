@@ -1,13 +1,13 @@
 ﻿
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\App.xaml;;
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\Dictionaries\ControlTemplates.xaml;;
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\Editors\WorldEditor\GameEntityView.xaml;;
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\Editors\WorldEditor\ProjectLayoutView.xaml;;
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\Editors\WorldEditor\WindowEditorView.xaml;;
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\MainWindow.xaml;;
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\GameProject\NewProject.xaml;;
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\GameProject\OpenProject.xaml;;
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\GameProject\ProjectBrowserDialog.xaml;;
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\Utilities\LoggerView.xaml;;
-FC:\Repos\Repos\TheseusEngine\TheseusEngine\TheseusEditor\Utilities\UndoRedoView.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\App.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Dictionaries\ControlTemplates.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Editors\WorldEditor\GameEntityView.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Editors\WorldEditor\ProjectLayoutView.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Editors\WorldEditor\WindowEditorView.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\MainWindow.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\GameProject\NewProject.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\GameProject\OpenProject.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\GameProject\ProjectBrowserDialog.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Utilities\LoggerView.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Utilities\UndoRedoView.xaml;;
 
