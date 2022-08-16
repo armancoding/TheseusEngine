@@ -37,13 +37,13 @@ namespace TheseusEditor
         private void OnMainWindowClosing(object sender, CancelEventArgs e)
         {
             Closing -= OnMainWindowClosing;
-            Project.Project.Current?.Unload();
+            GameProject.Project.Current?.Unload();
         }
 
 
         private void OpenProjectBrowserDialogue()
         {
-            var projectBrowser = new Project.ProjectBrowserDialog();
+            var projectBrowser = new GameProject.ProjectBrowserDialog();
 
             if (projectBrowser.ShowDialog() == false || projectBrowser.DataContext == null)
             {
@@ -51,7 +51,7 @@ namespace TheseusEditor
             }
             else
             {
-                Project.Project.Current?.Unload();
+                GameProject.Project.Current?.Unload();
                 DataContext = projectBrowser.DataContext;
             }
         }

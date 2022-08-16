@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,14 @@ namespace TheseusEditor.Editors
         public WindowEditorView()
         {
             InitializeComponent();
+            Loaded += OnWindowEditorViewLoaded;
+        }
+
+        private void OnWindowEditorViewLoaded(object sender, RoutedEventArgs e)
+        {
+            Loaded -= OnWindowEditorViewLoaded;
+            Focus();
+            ((INotifyCollectionChanged)GameProject.Project.UndoRedo.UndoList).CollectionChanged += (s, e) => Focus();
         }
     }
 }

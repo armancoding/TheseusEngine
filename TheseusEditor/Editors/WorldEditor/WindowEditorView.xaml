@@ -4,10 +4,54 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TheseusEditor.Editors"
-             mc:Ignorable="d" 
+             xmlns:Utl="clr-namespace:TheseusEditor.Utilities"
+             mc:Ignorable="d" Focusable="True"
              d:DesignHeight="450" d:DesignWidth="800"
-             Background="#282828" Foreground="#D2C8C8" BorderBrush="#2E2828"> 
+             Foreground="#D2C8C8" BorderBrush="#D2C8C8">
+    <UserControl.InputBindings>
+        <KeyBinding Command="{Binding UndoCommand}" Key="Z" Modifiers="Ctrl"/>
+        <KeyBinding Command="{Binding RedoCommand}" Key="Y" Modifiers="Ctrl"/>
+        <KeyBinding Command="{Binding SaveCommand}" Key="S" Modifiers="Ctrl"/>
+    </UserControl.InputBindings>
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="←" Command="{Binding UndoCommand}" Background="#2E2828" Foreground="#D2C8C8" BorderBrush="#D2C8C8" />
+            <Button Content="→" Command="{Binding RedoCommand}" Background="#2E2828" Foreground="#D2C8C8" BorderBrush="#D2C8C8" />
+        </StackPanel>
+        <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <GridSplitter Grid.Row="1" Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
+                <TabControl Grid.Row="1" Background="#282828" Foreground="#d2c8c8">
+                <TabItem Header="History">
+                        <Utl:UndoRedoView DataContext="{Binding UndoRedo}" />
+                </TabItem>
+                <TabItem Header="Log" >
+                        <Utl:LoggerView Background="#282828" Foreground="#d2c8c8" />
+                </TabItem>
+            </TabControl>
+            </Grid>
+        <GridSplitter Grid.Column="1" Width="1" HorizontalAlignment="Left" />
+        <Grid Grid.Column="1" Margin="5,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <GridSplitter Grid.Row="1" Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
+            <local:ProjectLayoutView/>
+            <local:GameEntityView Grid.Row="1"/>
+            </Grid>
+        </Grid>
     </Grid>
 </UserControl>

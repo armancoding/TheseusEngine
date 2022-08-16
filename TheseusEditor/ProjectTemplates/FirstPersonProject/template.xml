@@ -1,4 +1,4 @@
-<ProjectTemplate xmlns="http://schemas.datacontract.org/2004/07/TheseusEditor.Project" 
+<ProjectTemplate xmlns="http://schemas.datacontract.org/2004/07/TheseusEditor.GameProject" 
                  xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
 <Folders         xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
 <a:string>.Theseus</a:string>
@@ -6,5 +6,5 @@
 <a:string>GameCode</a:string>
 </Folders>
 <ProjectFile>project.theseus</ProjectFile>
-<ProjectType>FPS Project</ProjectType>
+<ProjectType>First Person Project</ProjectType>
 </ProjectTemplate>

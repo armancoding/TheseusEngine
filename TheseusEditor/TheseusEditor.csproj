@@ -44,6 +44,7 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.3.0\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
@@ -73,13 +74,48 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Components\Component.cs" />
+    <Compile Include="Components\DataContextAttribute.cs" />
+    <Compile Include="Components\GameEntity.cs" />
+    <Compile Include="Components\Transform.cs" />
+    <Compile Include="Dictionaries\ControlTemplates.xaml.cs">
+      <DependentUpon>ControlTemplates.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\WorldEditor\GameEntityView.xaml.cs">
+      <DependentUpon>GameEntityView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\WorldEditor\ProjectLayoutView.xaml.cs">
+      <DependentUpon>ProjectLayoutView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Editors\WorldEditor\WindowEditorView.xaml.cs">
       <DependentUpon>WindowEditorView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Project\OpenProjectClass.cs" />
-    <Compile Include="Project\Project.cs" />
-    <Compile Include="Project\Scene.cs" />
+    <Compile Include="GameProject\OpenProjectClass.cs" />
+    <Compile Include="GameProject\Project.cs" />
+    <Compile Include="GameProject\Scene.cs" />
+    <Compile Include="Utilities\Logger.cs" />
+    <Compile Include="Utilities\LoggerView.xaml.cs">
+      <DependentUpon>LoggerView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\Serializer.cs" />
+    <Compile Include="Utilities\UndoRedo.cs" />
+    <Compile Include="Utilities\UndoRedoView.xaml.cs">
+      <DependentUpon>UndoRedoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Utilities.cs" />
+    <Page Include="Dictionaries\ControlTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Editors\WorldEditor\GameEntityView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Editors\WorldEditor\ProjectLayoutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Editors\WorldEditor\WindowEditorView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -97,28 +133,36 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Project\NewProject.xaml">
+    <Page Include="GameProject\NewProject.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Project\OpenProject.xaml">
+    <Page Include="GameProject\OpenProject.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Project\ProjectBrowserDialog.xaml">
+    <Page Include="GameProject\ProjectBrowserDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Utilities\LoggerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Utilities\UndoRedoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Project\NewProject.xaml.cs">
+    <Compile Include="GameProject\NewProject.xaml.cs">
       <DependentUpon>NewProject.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Project\NewProjectClass.cs" />
-    <Compile Include="Project\OpenProject.xaml.cs">
+    <Compile Include="GameProject\NewProjectClass.cs" />
+    <Compile Include="GameProject\OpenProject.xaml.cs">
       <DependentUpon>OpenProject.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Project\ProjectBrowserDialog.xaml.cs">
+    <Compile Include="GameProject\ProjectBrowserDialog.xaml.cs">
       <DependentUpon>ProjectBrowserDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
