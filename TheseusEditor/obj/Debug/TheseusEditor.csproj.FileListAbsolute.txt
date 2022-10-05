@@ -70,3 +70,4 @@ D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\GameProject\OpenP
 D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\GameProject\ProjectBrowserDialog.baml
 D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\Utilities\LoggerView.baml
 D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\Utilities\UndoRedoView.baml
+D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\Dictionaries\EditorColors.baml

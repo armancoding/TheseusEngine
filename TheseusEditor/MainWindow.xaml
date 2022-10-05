@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:TheseusEditor"
         xmlns:editors="clr-namespace:TheseusEditor.Editors"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Background="#2E2828" Foreground="#D2C8C8" BorderBrush="#2E2828"
-        Title="Theseus Editor" Height="720" Width="1200">
+        Title="Theseus Editor" Height="720" Width="1200"
+        Style="{StaticResource TheseusWindowStyle}">
     <Grid>
        
         <editors:WindowEditorView />

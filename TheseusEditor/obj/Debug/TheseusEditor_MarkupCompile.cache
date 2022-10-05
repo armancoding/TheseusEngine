@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\App.xaml
-102086413744
+11-181424465
 
-29-1096487442
+29864541056
 182067548688
-Dictionaries\ControlTemplates.xaml;Editors\WorldEditor\GameEntityView.xaml;Editors\WorldEditor\ProjectLayoutView.xaml;Editors\WorldEditor\WindowEditorView.xaml;MainWindow.xaml;GameProject\NewProject.xaml;GameProject\OpenProject.xaml;GameProject\ProjectBrowserDialog.xaml;Utilities\LoggerView.xaml;Utilities\UndoRedoView.xaml;
+Dictionaries\ControlTemplates.xaml;Dictionaries\EditorColors.xaml;Editors\WorldEditor\GameEntityView.xaml;Editors\WorldEditor\ProjectLayoutView.xaml;Editors\WorldEditor\WindowEditorView.xaml;MainWindow.xaml;GameProject\NewProject.xaml;GameProject\OpenProject.xaml;GameProject\ProjectBrowserDialog.xaml;Utilities\LoggerView.xaml;Utilities\UndoRedoView.xaml;
 
-True
+False
 
