@@ -1,14 +1,5 @@
-﻿D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\GeneratedInternalTypeHelper.g.i.cs
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\App.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Dictionaries\ControlTemplates.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Dictionaries\EditorColors.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Editors\WorldEditor\GameEntityView.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Editors\WorldEditor\ProjectLayoutView.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Editors\WorldEditor\WindowEditorView.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\MainWindow.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\GameProject\NewProject.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\GameProject\OpenProject.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\GameProject\ProjectBrowserDialog.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Utilities\LoggerView.xaml;;
-FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Utilities\UndoRedoView.xaml;;
+﻿
+
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Editors\WorldEditor\ComponentView.xaml;;
+FD:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\Editors\WorldEditor\TransformView.xaml;;
 

@@ -41,5 +41,10 @@ namespace TheseusEditor.GameProject
             win.DialogResult = dialogResult;
             win.Close();
         }
+
+        private void templateListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

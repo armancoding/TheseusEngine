@@ -7,7 +7,6 @@
              xmlns:proj ="clr-namespace:TheseusEditor.GameProject"
              mc:Ignorable="d" 
              d:DataContext="{d:DesignInstance Type=proj:Project, IsDesignTimeCreatable=True}"
-             Background="#282828" Foreground="#D2C8C8" BorderBrush="#2E2828"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.RowDefinitions>
@@ -15,7 +14,6 @@
             <RowDefinition/>   
         </Grid.RowDefinitions>
         <Button Content="Add Scene" Width="96" VerticalAlignment="Center"  Focusable="False" Grid.Row="0" HorizontalAlignment="Left"
-                Background="#2E2828" Foreground="#D2C8C8" BorderBrush="#D2C8C8" 
                 Command="{Binding AddSceneCommand}"/>
         <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
             <ItemsControl ItemsSource="{Binding Scenes}">
@@ -29,26 +27,23 @@
                         <Expander IsExpanded="{Binding IsActive, Mode=OneWay}">
                             <Expander.Header>
                                 <Grid>
-                                    <TextBlock Text="{Binding Name}" Foreground="#D2C8C8"/>
-                                    <Button Content="🗑" Width="20" VerticalAlignment="Center"  Focusable="False" Margin="100,0,0,0"
-                                    Background="#2E2828" Foreground="#D2C8C8" BorderBrush="#D2C8C8" 
+                                    <TextBlock Text="{Binding Name}" Foreground="{StaticResource Editor.FontBrush}" Width="500"/>
+                                    <Button Content=" 🗑 " Width="auto" VerticalAlignment="Center"   Focusable="False" Margin="50,0,0,0"
                                     Command="{Binding DataContext.RemoveSceneCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
                                     CommandParameter="{Binding}"/>
-                                    <Button Content=" + " Width="20" VerticalAlignment="Center"  Focusable="False" Margin="20,0,0,0" 
-                                    Background="#2E2828" Foreground="#D2C8C8" BorderBrush="#D2C8C8" 
+                                    <Button Content=" + " Width="auto" VerticalAlignment="Center" Focusable="False"  
                                     IsEnabled="{Binding IsActive}"
                                     Click="OnAddEntity_Button_Click"/>
                                 </Grid>
                             </Expander.Header>
-                            <ListBox Background="#2E2828" Foreground="#D2C8C8" 
-                                     ItemsSource="{Binding GameEntities}" IsEnabled="{Binding IsActive}"
+                            
+                            <ListBox ItemsSource="{Binding GameEntities}" IsEnabled="{Binding IsActive}"
                                      SelectionMode="Extended" SelectionChanged="OnGameEntities_ListBox_SelectionChanged">
                                 <ListBox.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding Name}" />
-                                            <Button Content="🗑"  Background="#2E2828" Foreground="#D2C8C8" BorderBrush="#D2C8C8" 
-                                                    Command="{Binding ParentScene.RemoveGameEntityCommand}" CommandParameter="{Binding}"/>
+                                            <TextBlock Text="{Binding Name}" Width="430" HorizontalAlignment="Left"/>
+                                            <Button Content="🗑" Command="{Binding ParentScene.RemoveGameEntityCommand}" CommandParameter="{Binding}" />
                                         </StackPanel>
                                     </DataTemplate>
                                 </ListBox.ItemTemplate>

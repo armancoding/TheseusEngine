@@ -98,11 +98,17 @@
       <DependentUpon>ControlTemplates.xaml</DependentUpon>
     </Compile>
     <Compile Include="DllWrapper\EngineAPI.cs" />
+    <Compile Include="Editors\WorldEditor\ComponentView.xaml.cs">
+      <DependentUpon>ComponentView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Editors\WorldEditor\GameEntityView.xaml.cs">
       <DependentUpon>GameEntityView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Editors\WorldEditor\ProjectLayoutView.xaml.cs">
       <DependentUpon>ProjectLayoutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\WorldEditor\TransformView.xaml.cs">
+      <DependentUpon>TransformView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Editors\WorldEditor\WindowEditorView.xaml.cs">
       <DependentUpon>WindowEditorView.xaml</DependentUpon>
@@ -110,6 +116,9 @@
     <Compile Include="GameProject\OpenProjectClass.cs" />
     <Compile Include="GameProject\Project.cs" />
     <Compile Include="GameProject\Scene.cs" />
+    <Compile Include="Utilities\Controls\NumberBox.cs" />
+    <Compile Include="Utilities\Controls\ScalarBox.cs" />
+    <Compile Include="Utilities\Controls\VectorBox.cs" />
     <Compile Include="Utilities\Logger.cs" />
     <Compile Include="Utilities\LoggerView.xaml.cs">
       <DependentUpon>LoggerView.xaml</DependentUpon>
@@ -128,11 +137,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Editors\WorldEditor\ComponentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Editors\WorldEditor\GameEntityView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Editors\WorldEditor\ProjectLayoutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Editors\WorldEditor\TransformView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

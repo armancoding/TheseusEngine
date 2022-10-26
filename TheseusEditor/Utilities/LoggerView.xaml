@@ -6,6 +6,41 @@
              xmlns:local="clr-namespace:TheseusEditor.Utilities"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type ToggleButton}">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Background" Value="{StaticResource Editor.Window.GrayBrush1}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Editor.Window.GrayBrush1}"/>
+            <Setter Property="Foreground" Value="{StaticResource Editor.FontBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Editor.Selected.BackgroundBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Editor.Selected.BackgroundBrush}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Editor.Window.GrayBrush4}"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Editor.Window.GrayBrush4}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Editor.Window.GrayBrush4}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Editor.Disabled.FontBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
     <DockPanel>
         <Border Height="32" DockPanel.Dock="Top">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="4,0" VerticalAlignment="Center">
@@ -43,7 +78,7 @@
                             <TextBlock Text="{Binding Message}" TextWrapping="Wrap"/>
                                 <TextBlock.Style>
                                     <Style TargetType="TextBlock">
-                                        <Setter Property="Foreground" Value="Green"/>
+                                        <Setter Property="Foreground" Value="{StaticResource Editor.FontBrush}"/>
                                         <Style.Triggers>
                                             <DataTrigger Binding="{Binding MessageType}" Value="{x:Static local:MessageType.Warning}">
                                                 <Setter Property="Foreground" Value="#ffffbb22"/>

@@ -31,7 +31,11 @@ namespace TheseusEditor.Editors
         {
             Loaded -= OnWindowEditorViewLoaded;
             Focus();
-            ((INotifyCollectionChanged)GameProject.Project.UndoRedo.UndoList).CollectionChanged += (s, e) => Focus();
+        }
+
+        private void ProjectLayoutView_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

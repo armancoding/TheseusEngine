@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Repos\Repos\TheseusEngine\TheseusEditor\obj\Debug\
+D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\
 TheseusEditor
 none
 false
 DEBUG;TRACE
-C:\Repos\Repos\TheseusEngine\TheseusEditor\App.xaml
-11-181424465
+D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\App.xaml
+13847223800
 
-29864541056
+341096299236
 182067548688
-Dictionaries\ControlTemplates.xaml;Dictionaries\EditorColors.xaml;Editors\WorldEditor\GameEntityView.xaml;Editors\WorldEditor\ProjectLayoutView.xaml;Editors\WorldEditor\WindowEditorView.xaml;MainWindow.xaml;GameProject\NewProject.xaml;GameProject\OpenProject.xaml;GameProject\ProjectBrowserDialog.xaml;Utilities\LoggerView.xaml;Utilities\UndoRedoView.xaml;
+Dictionaries\ControlTemplates.xaml;Dictionaries\EditorColors.xaml;Editors\WorldEditor\ComponentView.xaml;Editors\WorldEditor\GameEntityView.xaml;Editors\WorldEditor\ProjectLayoutView.xaml;Editors\WorldEditor\TransformView.xaml;Editors\WorldEditor\WindowEditorView.xaml;MainWindow.xaml;GameProject\NewProject.xaml;GameProject\OpenProject.xaml;GameProject\ProjectBrowserDialog.xaml;Utilities\LoggerView.xaml;Utilities\UndoRedoView.xaml;
 
 False
 

@@ -108,3 +108,7 @@ C:\Repos\Repos\TheseusEngine\TheseusEditor\obj\Debug\TheseusEditor.csproj.Genera
 C:\Repos\Repos\TheseusEngine\TheseusEditor\obj\Debug\TheseusEditor.csproj.CoreCompileInputs.cache
 C:\Repos\Repos\TheseusEngine\TheseusEditor\obj\Debug\TheseusEditor.exe
 C:\Repos\Repos\TheseusEngine\TheseusEditor\obj\Debug\TheseusEditor.pdb
+D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\Editors\WorldEditor\ComponentView.g.cs
+D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\Editors\WorldEditor\ComponentView.baml
+D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\Editors\WorldEditor\TransformView.g.cs
+D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\obj\Debug\Editors\WorldEditor\TransformView.baml
