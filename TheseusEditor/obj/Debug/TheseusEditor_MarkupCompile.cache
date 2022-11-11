@@ -12,9 +12,9 @@ DEBUG;TRACE
 D:\TheseusEngine\TheseusEngine\Theseus\TheseusEditor\App.xaml
 13847223800
 
-341096299236
+35-1276889939
 182067548688
 Dictionaries\ControlTemplates.xaml;Dictionaries\EditorColors.xaml;Editors\WorldEditor\ComponentView.xaml;Editors\WorldEditor\GameEntityView.xaml;Editors\WorldEditor\ProjectLayoutView.xaml;Editors\WorldEditor\TransformView.xaml;Editors\WorldEditor\WindowEditorView.xaml;MainWindow.xaml;GameProject\NewProject.xaml;GameProject\OpenProject.xaml;GameProject\ProjectBrowserDialog.xaml;Utilities\LoggerView.xaml;Utilities\UndoRedoView.xaml;
 
-False
+True
 

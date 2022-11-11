@@ -1,3 +1,4 @@
 ﻿  Entity.cpp
+  Script.cpp
   Transform.cpp
   Engine.vcxproj -> D:\TheseusEngine\TheseusEngine\Theseus\x64\Debug\Engine.lib

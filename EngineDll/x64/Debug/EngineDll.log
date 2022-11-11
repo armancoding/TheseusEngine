@@ -1,5 +1,3 @@
-﻿  DllMain.cpp
-  EngineAPI.cpp
-  Generating Code...
+﻿  EngineAPI.cpp
      Creating library D:\TheseusEngine\TheseusEngine\Theseus\x64\Debug\EngineDll.lib and object D:\TheseusEngine\TheseusEngine\Theseus\x64\Debug\EngineDll.exp
   EngineDll.vcxproj -> D:\TheseusEngine\TheseusEngine\Theseus\x64\Debug\EngineDll.dll
